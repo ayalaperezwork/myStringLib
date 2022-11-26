@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+//Function to copy the string src to the string trg
+int mycpy(char * source, char * target){
+  // Initializing variablrs
+  int limit = trg + 5;
+  int count = 0;
+
+  // repeat while don't reach the last char or the target limit
+  while((*source != '\0') && (target < limit)){
+    *target = *source;
+    target++;
+    source++;     
+  }
+  *target = '\0';
+  if((count == limit) && (*source != '\0')) return 2;
+  else return 0;
+}
+
+int main (void){
+  char fuente[]  = {apple};
+  char destino[10];
+
+  printf("Result code = %d \n", mycpy(&fuente, &destino));
+
+  return 0;
+}

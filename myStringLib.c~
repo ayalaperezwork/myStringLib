@@ -1,0 +1,13 @@
+#include "myStringLib.h"
+
+//Function to copy the string src to the string trg
+int mycpy(char * src, char * trg, int n){}
+
+int mycmp(char * str1, char * str2){}
+
+int myatoi(cons char * str){}
+
+int myatoiHex(const char * str){}
+
+long mystrtol(const char * str, char ** endptr, int base){}
+
