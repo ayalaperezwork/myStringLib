@@ -1,0 +1,6 @@
+probingFuncLib: probingFuncLib.o myStringLib.o
+	gcc -o probingFuncLib probingFuncLib.o myStringLib.o
+probingFuncLib: probingFuncLib.c
+	gcc -c probingFuncLib.c
+myStringLib: myStringLib.c
+	gcc -c myStringLib.c

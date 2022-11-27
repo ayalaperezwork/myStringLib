@@ -20,7 +20,9 @@ int mycpy(char * source, char * target, int edge){
   else return 0;
 }
 
-int mycmp(char * str1, char * str2){}
+int mycmp(char * str1, char * str2){
+
+}
 
 int myatoi(const char * str){}
 

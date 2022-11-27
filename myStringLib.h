@@ -1,15 +1,15 @@
-#ifndef _MYSTRINGLIB
-#define _MYSTRINGLIB
+//#ifndef _MYSTRINGLIB
+//#define _MYSTRINGLIB
 
-int mycpy(char *, char *, int)
+int mycpy(char *, char *, int);
 
-int mycmp(char *, char *)
+int mycmp(char *, char *);
 
-int myatoi(cons char *){}
+int myatoi(const char *);
 
-int myatoiHex(const char *){}
+int myatoiHex(const char *);
 
-long mystrtol(const char *, char **, int)
+long mystrtol(const char *, char **, int);
 
-#include myStringLib.c
-#endif
+//#include "myStringLib.c"
+//#endif

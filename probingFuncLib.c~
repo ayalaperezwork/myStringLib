@@ -1,12 +1,12 @@
+#include<stdio.h>
 #include<stdlib.h>
-#include "myStringLib.h"
 
 // Function to copy the string 'source' to the string 'target'
 // limited by 'edge' chars
 int mycpy(char * source, char * target, int edge){
-  
-  // Initializing variables
+  // Initializing variablrs
   char * limit = target + edge;
+  int count = 0;
 
   // repeat while don't reach the last char or the target limit
   while((*source != '\0') && (target < limit)){
@@ -16,15 +16,16 @@ int mycpy(char * source, char * target, int edge){
   }
   *target = '\0';
   if((target == limit) && (*source != '\0')) return 2;
-  
   else return 0;
 }
 
-int mycmp(char * str1, char * str2){}
-
-int myatoi(const char * str){}
-
-int myatoiHex(const char * str){}
-
-long mystrtol(const char * str, char ** endptr, int base){}
-
+int main (void){
+  char fuente[]  = "superappleton";
+  char destino[10];
+  int  limit = 9;
+  
+  printf("Result code = %d \n", mycpy(&fuente[0], &destino[0], 9));
+  printf("String: %s \n", destino);
+  
+  return 0;
+}
