@@ -20,9 +20,46 @@ int mycpy(char * source, char * target, int edge){
   else return 0;
 }
 
-int mycmp(char * str1, char * str2){}
+int mycmp(char * str1, char * str2){
+  // Start pointing to the first element of str1 and str2
+  // Repeat while str1 and str2 are equals  null char in string 2
+  while(*str1 == *str2){
+    // If nth elements of str2 are '\0', end comparisson:
+    // strings are equal
+    if(*str2 == '\0') return 0;
+    // point to the next char in both strings
+    str1++;
+    str2++;
+  }
+  // Strings are not equal
+  return 1;
+}
 
-int myatoi(const char * str){}
+int myatoi(const char * strnumber){
+  // Point the first element and change from ascii to natural,
+  // Initialize digito & result
+  int digito = *strnumber - 48;
+  int result = 0;
+
+  // While digito is number and is not end of string:
+  while((digito >= 0 && digito <= 9) && *strnumber != '\0'){
+    
+    // Calculate the final number
+    result = result * 10 + digito;
+
+    // Point to the next element
+    strnumber++;
+
+    // Change element pointed from ascii to natural number
+    digito = *strnumber - 48;
+  }
+
+  // Out of the cycle, if the pointed char is '\0', end and return value
+  if(*strnumber == '\0') return result;
+
+  // end and return ERROR (-1)
+  return -1;
+}
 
 int myatoiHex(const char * str){}
 
