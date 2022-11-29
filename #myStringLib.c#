@@ -92,7 +92,7 @@ int myatoiHex(const char * strnumhex){
 }
 
 int asciiHex(int number){
-    int digito = 0;
+    int dixgito = 0;
     if(48 <= number && number <= 57)return (number - 48);
     else if(65 <= number && number <= 70)return (number - 55);
     else return -1;
